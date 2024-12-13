@@ -24,3 +24,4 @@ function visitNode(node) {
 visitNode(sourceFile);
 
 // https://github.com/microsoft/TypeScript/pull/46599/files
+// https://github.com/microsoft/TypeScript/issues/60453
