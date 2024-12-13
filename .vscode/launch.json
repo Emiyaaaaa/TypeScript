@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "name": "调试 ts 源码",
+      "program": "${workspaceFolder}/test.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "args": [
+        "--experimental-modules",
+        "--experimental-json-modules",
+        "${workspaceFolder}/test.js"
+      ],
+      "stopOnEntry": true,
+      "type": "node"
+    },
+    {
+      "name": "调试 input.ts",
+      "program": "${workspaceFolder}/built/local/tsc.js",
+      "request": "launch",
+      "skipFiles": [
+          "<node_internals>/**"
+      ],
+      "args": [
+          "./input.ts"
+      ],
+      "stopOnEntry": true,
+      "type": "node"
+  }
+  ]
+}
